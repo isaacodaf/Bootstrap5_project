@@ -1,0 +1,205 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+
+.footer{
+    padding: 1rem;
+    background-color: $footer;
+}
+
+// STYLE THE CONTACT_BOX CONTENT
+.contact-box{
+    position: relative;
+
+    &__icon{
+        width: 2rem;
+        stroke: $secondary;
+        padding-top: 0.5rem;
+
+        @include media-breakpoint-up(sm){
+            width: 4rem;
+        }
+
+    }
+
+    &__info{
+        padding: 0.4rem;
+        font-weight: 600;
+
+        
+        
+
+        &--title{
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+
+            
+            @include media-breakpoint-up(sm){
+                font-size: 1.4rem;
+            }
+
+            &:hover{
+                color: $white;
+                background-color: rgba($primary, 0.75);
+                padding: 0.25rem;
+            }
+
+        }
+
+        &--subtitle{
+            color: $gray-500;
+            text-decoration: none;
+            font-size: 0.8rem;
+
+            @include media-breakpoint-up(sm){
+                font-size: 1.1rem;
+            }
+
+        }
+    }
+}
+
+// STYLE THE SOCIAL MEDIA CONTENT
+.footer-sm{
+
+    &__message{
+        font-size: 0.8rem;
+        color: $gray-500;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        @include media-breakpoint-up(sm){
+            font-size: 1rem;
+        }
+    }
+
+    a{
+        color: $secondary;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            color: $primary;
+            background-color: $secondary;
+        }
+
+        @include media-breakpoint-up(sm){
+            font-size: 1.4rem;
+            padding: 0.75rem;
+        }
+    }
+}
+
+// STYLE COMPANY INFO
+.company-list{
+    padding: 1rem;
+    background-color: $footer;
+    color: $gray-500;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(sm){
+        font-size: 1rem;
+    }
+
+    li{
+        list-style: none;
+        margin-bottom: 0.5rem;
+
+        a{
+            color: $gray-500;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            transition: all 0s ease-in-out;
+
+            // &:hover{
+            //     color: $primary;
+            //     background-color: rgba($secondary, 0.75);
+            //     padding: 0.25rem;
+            // }
+
+            &:hover{
+                color: $white;
+                background-color: rgba($primary, 0.75);
+                padding: 0.25rem;
+            }
+        }
+    }
+}
+
+// STYLE THE COPYRIGHT
+.footer-bottom{
+    background-color: $black;
+    &__copyright{
+        color: $gray-500;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        @include media-breakpoint-up(sm){
+            font-size: 1rem;
+        }
+        a{
+            color: $gray-500;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 650;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            transition: all 0s ease-in-out;
+
+            // &:hover{
+            //     color: $primary;
+            //     background-color: rgba($secondary, 0.75);
+            //     padding: 0.25rem;
+            // }
+
+            &:hover{
+                color: $white;
+                background-color: rgba($primary, 0.75);
+                padding: 0.25rem;
+            }
+        }
+    }
+}
+
+// STYLE THE BACK TO TOP BUTTON 
+.back-to-top{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    z-index: 9999;
+    background-color: $danger;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+
+    i{
+        color: $white;
+        font-size: 1.5rem;
+        margin-top: 0.2rem;
+        margin-left: 0.4rem;
+       
+    }
+
+    &:hover{
+        background-color: rgba($secondary, 0.75);
+        color: $white;
+    }
+}

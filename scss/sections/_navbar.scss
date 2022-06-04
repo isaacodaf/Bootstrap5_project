@@ -1,0 +1,44 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.menu {
+    @include gradient;
+    
+    li{
+        padding: 0 0.3rem;
+        
+
+        a{
+            color: #ECE7E2 !important;
+            font-size: 1.125rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.05rem;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        ul{
+            padding: 1rem 0.7rem;
+            background-color: $white;
+
+            li{
+                padding: 0.5rem 0.1rem;
+                hr{
+                    border: 1px solid $primary !important;
+                }
+                a{
+                    color: $primary !important;
+                    font-size: 1.1rem;
+                    font-weight: 450;
+                    align-items: center;
+                    text-transform: capitalize;
+                    letter-spacing: 0.05rem;
+                }
+            }
+
+
+        }
+
+    }
+}

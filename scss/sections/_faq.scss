@@ -1,0 +1,11 @@
+@use'../custom'as*;
+
+
+.faq{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    &__faqcontainer{
+        
+        color:$primary;
+    } 
+}

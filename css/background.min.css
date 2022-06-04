@@ -1,0 +1,2 @@
+@use '../custom' as *;@use '../components/mixins' as *;.bg-image{background-image:url(/images/background.jpeg);height:100%;background-position:center;background-repeat:no-repeat;background-size:cover;opacity:.25}
+/*# sourceMappingURL=background.min.css.map */

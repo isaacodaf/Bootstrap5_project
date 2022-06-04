@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesomw.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/assets/glightbox-master\dist\css\glightbox.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- START THE NAVBAR SECTION-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand bg-#ECE7E2" href="#">
+                <img src="images/logo_final.png" alt="logo image">
+            </a>
+            <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation close">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider border">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider border">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Testimonials</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider border">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">FAQ</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider border">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider border">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider border">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- call button -->
+                <button type="button" class="rounded-pill btn-rounded btn-lg me-3">+1(800)2346789
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                </button>
+
+                <!-- Sign In and Sign Up Buttons  -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-light rounded-pill btn-lg dropdown-toggle"
+                        data-bs-toggle="dropdown" haspopup="true" aria-expanded="false">
+                        Sign In
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right text-primary ">
+                        <a class="dropdown-item border-primary border-3 fw-bold" href="#">Sign In</a>
+                        <hr class="dropdown-divider border-primary border-3 fw-bold">
+                        <a class="dropdown-item border-primary border-3 fw-bold" href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of nav bar -->
+
+    <!-- INTRO SECTION (SECTION 2) -->
+    <section id="home" class="intro-section">
+        <div class="pt-3" style="background-image: url('/images/background1.jpg');">
+            <!-- Ship More For Less On Time-->
+            <p class="lead text-center pt-2 pb-4 display-5 fw-bold text-primary"> Ship More For Less On Time </p>
+
+            <!-- Track, Get a Quote, Location, Ship starts-->
+            <div class="container-lg justify-content-center align-items-center mt-2 ">
+                <div class="row justify-content-center align-items-center g-3 lh-1 fs-3 fs-sm-6 d-flex flex-md-row">
+
+                    <div class="col-4 col-md-3">
+                        <div
+                            class="p-4 display-2--topbar bg-white text-primary text-center fw-bold justify-content-center">
+                            <i class="bi bi-calculator-fill text-danger d-block mb-2"></i> Quote
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <div
+                            class="p-4 display-2--topbar bg-white text-primary text-center  fw-bold justify-content-center">
+                            <i class="bi bi-geo-alt-fill text-danger text-danger   d-block mb-2"></i>Location
+                        </div>
+                    </div>
+                    <div class="col-4  col-md-3">
+                        <div
+                            class="p-4 display-2--topbar bg-white text-primary text-center fw-bold justify-content-center">
+                            <i class="bi bi-box2-fill text-danger   d-block mb-2"></i> Ship
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Quote, Location, Ship -->
+
+            <!-- Welcome & Tracking Columns starts-->
+            <div class="container-lg mb-5">
+                <div class="g-4 justify-content-center  align-items-center">
+
+                    <div class="intros p-md-3 d-md-block text-start">
+                        <div class=" m-3 mt-1 mb-3 ">
+                            <div class="input-group">
+                                <input type="search"
+                                    class="form-control p-4 display-2--description fw-bold text-primary "
+                                    placeholder="TRACKING NUMBER" aria-label="search-addon"
+                                    aria-describedby="search-addon" />
+                                <button type="button" class="btn   bg-danger text-white display-2--description fw-bold"
+                                    aria-label="search">TRACK</button>
+                            </div>
+                            <div class=" ">
+                                <div class="lead text-black fs-6 pb-4 fw-bolder">SEPERATE MULTIPLE
+                                    TRACKING NUMBERS BY COMMA
+                                </div>
+
+                                <button type="button"
+                                    class="rounded-pill btn-rounded btn-lg border-dark border-3 p-3 pe-5 mb-3 fs-6">Need
+                                    help, get in touch
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- START THE CONTENT FOR THE INTRO -->
+                    <div class="intros bg-white bg-opacity-50 pb-5">
+                        <div class="pt-3 pb-3 ps-5 mt-3 pe-5 ">
+                            <h1 class="display-2">
+                                <span class="display-2--intro ">Welcome,</span>
+                                <span class="display-2--description lh-base">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Maxime eos voluptates quo? Ipsa ratione omnis sint possimus sed
+                                    cum
+                                    aliquid iste doloribus cupiditate, fugit nemo ipsam.</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Welcome & Tracking Columns -->
+        
+    </section>
+    <!-- End of INTRO SECTION -->
+    
+
+
+    <!-- OUR SERVICES SECTION (SECTION 3)-->
+
+    <section id="services" class="our-services">
+        
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="display-3 fw-bold">
+                    Our Services
+                </h1>
+                <div class="heading-line mb-5"></div>
+            </div>
+        </div>
+
+        <!-- START THE DECRIPTION CONTENT -->
+        <div class="container">
+            <div class="row pt-2 pb-2 mt-5 mb-3">
+                <div class="col-md-6 border-right">
+                    <div class="bg-white p-3">
+                        <h2 class="fw-bold text-capitalize text-center">
+                            Our Servies Include Mobile PickUp, International Package Shipping, Logistics, Package Tracking &
+                            Mobile Delivery Anytime Anywhere.
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white p-4 text-start">
+                        <p class="fw-light">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur recusandae expedita obcaecati vel dolor maxime aut ea iste deserunt, porro veniam exercitationem quos ut voluptatibus odit voluptate perferendis praesentium fugit!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- START THE CONTENT FOR THE SERVICES -->
+    <!-- .container>(.row>(.col-lg-6.col-md-6.col-sm-12.col-xs-12.services.mt-4>.services__content)*2)*4 -->
+
+    <div class="container">
+        <!-- START THE MOBILE PICKUP & DELIVERY CONTENT-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">
+                    <div class="icon fas fa-map-location-dot">
+                    </div>
+                    <h3 class="display-3--title mt-1"> Mobile PickUp & Delivery </h3>
+                    <p class="lh-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse ratione facilis animi sit veritatis, explicabo consectetur nobis magnam rerum doloremque veniam tempore labore iure in dolore excepturi quaerat. Cum itaque sapiente nostrum est eaque impedit repellendus fugiat harum quisquam, dignissimos velit totam necessitatibus ut? Ex delectus inventore saepe qui.
+                    </p>
+                    <button type="button"
+                                    class="rounded-pill btn-rounded btn-lg border-dark border-3 p-3 pe-5 mb-3 fs-6">Learn More
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">
+                    <img src="images/services/smartphone-mobile-delivery-package.png" alt="mobile pickup and delivery illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE International Package Shipping & Pricing CONTENT-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">
+                    <img src="images/services/international-package-shipping.png" alt="international package shipping illustration" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">
+                    <div class="icon fas fa-globe">
+                    </div>
+                    <h3 class="display-3--title mt-1"> International Package Shipping &
+                        Pricing </h3>
+                    <p class="lh-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse ratione facilis animi sit veritatis, explicabo consectetur nobis magnam rerum doloremque veniam tempore labore iure in dolore excepturi quaerat. Cum itaque sapiente nostrum est eaque impedit repellendus fugiat harum quisquam, dignissimos velit totam necessitatibus ut? Ex delectus inventore saepe qui.
+                    </p>
+                    <button type="button"
+                                    class="rounded-pill btn-rounded btn-lg border-dark border-3 p-3 pe-5 mb-3 fs-6">Learn More
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE Logistics CONTENT-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">'
+                    <div class="icon fas fa-shipping-fast">
+                    </div>
+                    <h3 class="display-3--title mt-1"> Logistics  </h3>
+                    <p class="lh-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse ratione facilis animi sit veritatis, explicabo consectetur nobis magnam rerum doloremque veniam tempore labore iure in dolore excepturi quaerat. Cum itaque sapiente nostrum est eaque impedit repellendus fugiat harum quisquam, dignissimos velit totam necessitatibus ut? Ex delectus inventore saepe qui.
+                    </p>
+                    <button type="button"
+                                    class="rounded-pill btn-rounded btn-lg border-dark border-3 p-3 pe-5 mb-3 fs-6">Learn More
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">
+                    <img src="images/services/logistics.png" alt="logistics illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE Corporate Partnership & Networking CONTENT-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">
+                    <div class="services__content">
+                        <img src="images/services/Corporate-Partnership-&-Networking.png" alt="logistics illustration" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+                <div class="services__content">
+                    <div class="icon fas fa-handshake">
+                    </div>
+                    <h3 class="display-3--title mt-1"> Corporate Partnership & Networking </h3>
+                    <p class="lh-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse ratione facilis animi sit veritatis, explicabo consectetur nobis magnam rerum doloremque veniam tempore labore iure in dolore excepturi quaerat. Cum itaque sapiente nostrum est eaque impedit repellendus fugiat harum quisquam, dignissimos velit totam necessitatibus ut? Ex delectus inventore saepe qui.
+                    </p>
+                    <button type="button"
+                                    class="rounded-pill btn-rounded btn-lg border-dark border-3 p-3 pe-5 mb-3 fs-6">Learn More
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+
+    <!-- Mobile Delivery starts-->
+    <section class="goal mb-5">
+        <div class="container-xl">
+            <div
+                class="row g-5 mt-3 mb-3 justify-content-evenly align-items-sm-center d-flex flex-md-row flex-column-reverse">
+                <!-- START THE CONTENT FOR THE VIDEO -->
+                <div class="col-md-6 d-md-block lead">
+                    <div class="video-box mb-5">
+                        <img src="images/adobeimages/smartphone-mobile-delivery-package.png" alt="video illustration"
+                            class="img-fluid">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span class="play-button bg-white pt-5 rounded-circle">
+                                <i class="fas fa-play-circle fa-4x"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- START THE CONTENT -->
+                <div class="col-md-6 d-md-block mt-3 text-start">
+                    <div>
+                        <h1 class="display-2">
+                            <span class="display-2--goal text-primary">Mobile PickUp & Delivery</span>
+                            <span class="display-2--description lh-base text-primary">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Fugit esse ratione facilis animi sit veritatis, explicabo
+                                consectetur nobis magnam rerum doloremque veniam tempore labore iure in dolore excepturi
+                                quaerat. Cum itaque sapiente nostrum est eaque impedit repellendus fugiat harum
+                                quisquam, dignissimos velit totam necessitatibus ut? Ex delectus inventore saepe
+                                qui.</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Delivery Ends-->
+
+        <!--International Package Shipping starts-->
+
+        <div class="container-xl">
+            <div class="row g-5 mt-3 mb-3 justify-content-start align-items-start">
+                <!-- START THE CONTENT -->
+                <div class="col-md-6 d-md-block mt-3 text-start">
+                    <div>
+                        <h1 class="display-2">
+                            <span class="display-2--goal text-primary">International Package Shipping &
+                                Pricing</span>
+                            <span class="display-2--description lh-base text-primary">Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Iusto suscipit ratione nihil fugiat numquam optio debitis
+                                sapiente modi officiis aliquam animi ducimus deserunt necessitatibus minus aperiam enim,
+                                quasi odit ex, maiores illum aspernatur voluptate. Possimus vero ipsum iusto eaque
+                                laboriosam eius autem, numquam quo eligendi animi labore, omnis cum libero?</span>
+                        </h1>
+                    </div>
+                </div>
+                <!-- START THE CONTENT FOR THE VIDEO -->
+                <div class="col-md-6 d-md-block lead">
+                    <div class="video-box  d-md-block mb-5">
+                        <img src="images/adobeimages/international-package-shipping.png" alt="video illustration"
+                            class="img-fluid">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span class="play-button bg-white pt-5 rounded-circle">
+                                <i class="fas fa-play-circle fa-4x"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--International Package Shipping Ends-->
+
+
+
+        <!-- Logistics starts-->
+        <div class="container-xl">
+            <div
+                class="row g-5 mt-3 mb-3 justify-content-evenly align-items-sm-center d-flex flex-md-row flex-column-reverse">
+                <!-- START THE CONTENT -->
+                <div class="col-md-6 d-md-block lead">
+                    <div class="video-box mb-5 d-md-block">
+                        <img src="images\adobeimages\logistics.png" alt="video illustration" class="img-fluid">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span class="play-button bg-white pt-5 rounded-circle">
+                                <i class="fas fa-play-circle fa-4x"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- START THE CONTENT FOR THE VIDEO -->
+                <div class="col-md-6 d-md-block mt-3 text-start">
+                    <div>
+                        <h1 class="display-2">
+                            <span class="display-2--goal text-primary"> Logistics </span>
+                            <span class="display-2--description lh-base text-primary">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Dignissimos, quisquam. Sequi amet quis ullam adipisci iure
+                                iusto id a voluptate, mollitia doloribus quaerat. Quam facere inventore eum ipsum ut.
+                                Amet quaerat soluta itaque ipsam asperiores officiis totam ratione quod, cum minus
+                                repellat impedit. Officiis, odit? Quod numquam dolorem accusantium architecto?</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logistics ends-->
+
+        <!-- Corporate Partnership & Networking Starts -->
+
+        <div class="container-xl">
+            <div class="row g-5 mt-3 mb-3 justify-content-start align-items-start">
+                <!-- START THE CONTENT FOR THE VIDEO -->
+                <div class="col-md-6 d-md-block mt-3 text-start">
+                    <div>
+                        <h1 class="display-2">
+                            <span class="display-2--goal text-primary">Corporate Partnership & Networking</span>
+                            <span class="display-2--description lh-base text-primary">Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Iusto suscipit ratione nihil fugiat numquam optio debitis
+                                sapiente modi officiis aliquam animi ducimus deserunt necessitatibus minus aperiam enim,
+                                quasi odit ex, maiores illum aspernatur voluptate. Possimus vero ipsum iusto eaque
+                                laboriosam eius autem, numquam quo eligendi animi labore, omnis cum libero?</span>
+                        </h1>
+                    </div>
+                </div>
+                <!-- START THE CONTENT-->
+                <div class="col-md-6 d-md-block introslead">
+                    <div class="video-box mb-5 d-md-block">
+                        <img src="images/adobeimages/Corporate-Partnership-&-Networking.png" alt="video illustration"
+                            class="img-fluid">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span class="play-button bg-white pt-5 rounded-circle">
+                                <i class="fas fa-play-circle fa-4x"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- c309d7 -->
+    </section>
+    <!--Corporate Partnership & Networking Ends-->
+
+
+    <!--Start the companies section -->
+    <section id="companies" class="companies mt-5">
+
+        <div class="container">
+            <div class="row text-center">
+                <h4 class="fw-bold lead mb-3">Trusted by companies like</h4>
+                <div />
+                <div class="heading-line mb-5">
+                </div>
+            </div>
+
+            <!-- Start the compamies logos-->
+            <!-- .container>.row>(.col-md-4>.companies__logo-box>img[src="images/companies/company-$.png"][alt="Company $ logo"][title="Company $ Logo"].img-fluid)*10 -->
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-1.png"
+                            alt="Amazon" title="Amazon" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-2.png"
+                                alt="Apple" title="Apple" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-3.png"
+                                alt="Facebook" title="Facebook" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-4.png"
+                                alt="Fedex" title="Fedex" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-5.png"
+                                alt="Google" title="Google" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-6.png"
+                                alt="Microsoft" title="Microsoft" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-7.png"
+                                alt="UPS" title="UPS" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-8.png"
+                                alt="Samsung" title="Samsung" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shadow-sm"><img src="images/companies/company-9.png"
+                                alt="Uber/Lyft" title="Uber/Lyft" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+    <!--glightbox javascript path-->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- <script src="assets/vendors/js/glightbox.min.js"></script> -->
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://www.youtube.com/watch?v=neV3EPgvZ3g&ab_channel=CafeMusicBGMchannel',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            autoplay: true,
+        });
+    </script>
+
+    <!-- Bootstrap JavaScript path-->
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
